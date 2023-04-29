@@ -1,0 +1,37 @@
+Steps WE Done for Linear Regression:
+
+1) we split available data in two sets
+i) Training: We will train our model on this dataset
+ii)Testing: We will use this subset to make actual predictions using trained model
+
+REASON ----> 
+The reason we don't use same training set for testing is because our model has seen those samples before, using same samples for making predictions might give us wrong impression about accuracy of our model. It is like you ask same questions in exam paper as you tought the students in the class.
+
+
+Library for above step ---:
+from sklearn.model_selection import train_test_split #selection model selection from sklearn lib
+X_train , X_test , y_train , y_test = train_test_split(X , y , test_size = 0.3) # return 4 arg testing on 30% of rem data rest training
+
+give four ans training & testing dataframe for dependent & indepent var
+
+
+STEP 2 :
+
+Lets run linear regression model now
+from sklearn.linear_model import LinearRegression # import lineaear reg
+
+
+from sklearn.linear_model import LinearRegression # import linearregtression 
+clf = LinearRegression() # initialize
+clf.fit(X_train, y_train) # .fit train the model
+
+Above  lib for linear reg
+
+
+
+
+X_train, X_test, y_train, y_test = train_test_split(X,y,test_size=0.3,random_state=10)
+X_test
+
+
+Why We use random state???? ---> [Todo]
